@@ -1,5 +1,10 @@
 import os
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+import nltk
+
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('stopwords')
 
 import streamlit as st
 import torch
